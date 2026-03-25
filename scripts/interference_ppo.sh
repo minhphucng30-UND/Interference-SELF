@@ -40,9 +40,9 @@ model_name=Qwen2.5-1.5B
 
 python3 -m clipping_analysis.main \
     algorithm.adv_estimator=gae \
-    data.train_files=data//train.parquet \
-    data.val_files=data/reasoning_gym/test.parquet \
-    data.buffer_files=data/reasoning_gym/Qwen2.5-7B-Instruct-1M_buffer_flatten.parquet \
+    data.train_files=data/deepscaler/deepscaler_train.parquet\
+    data.val_files=data/deepscaler/aime.parquet \
+    data.buffer_files=data/deepscaler/deepscaler_Qwen2.5-Math-1.5B_flatten.parquet \
     data.train_batch_size=64 \
     data.val_batch_size=128 \
     data.max_prompt_length=1024 \
